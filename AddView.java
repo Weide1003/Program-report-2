@@ -150,12 +150,12 @@ public class AddView extends JFrame {
                 String salary = Salary.getText();
                 String workSchedule = WorkSchedule.getText();
 
-                if(firstNameText == null || "".equals(secondNameText)){
-                    JOptionPane.showMessageDialog(contentPane, "Please enter your last name", "System prompt", JOptionPane.WARNING_MESSAGE);
+                if(firstNameText == null || "".equals(LastNameText)){
+                    JOptionPane.showMessageDialog(contentPane, "Please enter your first name", "System prompt", JOptionPane.WARNING_MESSAGE);
                     return;
                 }
-                if(secondNameText == null || "".equals(secondNameText)){
-                    JOptionPane.showMessageDialog(contentPane, "Please enter your first name", "System prompt", JOptionPane.WARNING_MESSAGE);
+                if(LastNameText == null || "".equals(LastNameText)){
+                    JOptionPane.showMessageDialog(contentPane, "Please enter your last name", "System prompt", JOptionPane.WARNING_MESSAGE);
                     return;
                 }
                 if(stateText == null || "".equals(stateText)){
@@ -170,7 +170,7 @@ public class AddView extends JFrame {
                     JOptionPane.showMessageDialog(contentPane, "Please enter Street", "System prompt", JOptionPane.WARNING_MESSAGE);
                     return;
                 }
-                if(phoneNumber == null || "".equals(phoneNumber) || phoneNumber.length() != 11 ){
+                if(phoneNumber == null || "".equals(phoneNumber) || phoneNumber.length() != 10 ){
                     JOptionPane.showMessageDialog(contentPane, "Incorrect Phone Number", "System prompt", JOptionPane.WARNING_MESSAGE);
                     return;
                 }
@@ -182,7 +182,7 @@ public class AddView extends JFrame {
                     JOptionPane.showMessageDialog(contentPane, "The format of the mobile phone number is incorrect", "System prompt", JOptionPane.WARNING_MESSAGE);
 
                 }
-                if(zipCode == null || "".equals(zipCode) || zipCode.length() != 7 ){
+                if(zipCode == null || "".equals(zipCode) || zipCode.length() != 5 ){
                     JOptionPane.showMessageDialog(contentPane, "Incorrect Zip Code", "System prompt", JOptionPane.WARNING_MESSAGE);
                     return;
                 }
