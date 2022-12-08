@@ -82,7 +82,7 @@ public class UserListView extends JFrame {
         contentPane.add(nameText);
         nameText.setColumns(10);
 
-        //查询按钮
+
         JButton searchBtn = new JButton("Search");
         searchBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
